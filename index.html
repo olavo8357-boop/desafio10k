@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DESAFIO 10K — Vendas Sem Estoque</title>
+    <meta name="description" content="Desafio 10k pra fazer os primeiros 10k em 14 dias com o Mercado Livre por Diego Mendes." />
+    <meta property="og:title" content="DESAFIO 10K — Vendas Sem Estoque" />
+    <meta property="og:description" content="Desafio 10k pra fazer os primeiros 10k em 14 dias com o Mercado Livre por Diego Mendes." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Safe window.fetch getter/setter initialization to prevent "Cannot set property fetch of #<Window> which has only a getter"
+      (function() {
+        try {
+          let currentFetch = typeof window !== 'undefined' && window.fetch ? window.fetch.bind(window) : undefined;
+          Object.defineProperty(window, 'fetch', {
+            get() {
+              return currentFetch;
+            },
+            set(fn) {
+              currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        } catch (err) {
+          // fallback if property definition is restricted
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans antialiased bg-[#050508] text-zinc-100 selection:bg-violet-600 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

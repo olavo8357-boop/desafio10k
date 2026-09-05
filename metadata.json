@@ -1,0 +1,6 @@
+{
+  "name": "DESAFIO 10K — Vendas Sem Estoque",
+  "description": "Desafio 10k pra fazer os primeiros 10k em 14 dias com o Mercado Livre por Diego Mendes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
